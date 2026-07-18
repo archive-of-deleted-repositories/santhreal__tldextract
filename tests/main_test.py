@@ -157,6 +157,7 @@ def test_looks_like_ip() -> None:
     assert looks_like_ip("a.1.1.1") is False
     assert looks_like_ip("1.1.1.1\n") is False
     assert looks_like_ip("256.256.256.256") is False
+    assert looks_like_ip("") is False
 
 
 def test_looks_like_ipv6() -> None:
